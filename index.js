@@ -9,6 +9,7 @@ const fetch = require('node-fetch');
 const app = express();
 const client = new Discord.Client();
 const prefix = '!'
+const keep_alive = require("./keep_alive.js");
 
 setInterval(() => {
 const Linkler = db.get('Linkler')
